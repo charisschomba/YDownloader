@@ -66,6 +66,9 @@ This option downloads Audio from a text file
 
 ## For option 4 and 5
 
+The first you choose option 4 or 5 without url_list in the download folder,
+the script will create one for you.
+
 you should have url_list.txt in /home/[user]/Downloads/
 
 for example /home/anonymous/Downloads/url_list.txt with a list of all urls.
