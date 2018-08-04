@@ -1,5 +1,5 @@
 # YDownloader
-YDownloader scripts downloads youtube contents.
+YDownloader script downloads Youtube contents.
 The script downloads Audio,Video and the playlist.
 
 ## for windows users,Download use YDownloader.exe
