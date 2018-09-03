@@ -1,0 +1,12 @@
+pafy==0.5.4
+Pillow==5.2.0
+PyAutoGUI==0.9.38
+PyMsgBox==1.0.6
+pyperclip==1.6.4
+PyScreeze==0.1.18
+PyTweening==1.0.3
+six==1.11.0
+xlib==0.21
+youtube-dl==2018.8.4
+pyobjc-core
+pyobjc
