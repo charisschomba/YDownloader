@@ -81,11 +81,16 @@ for example /home/anonymous/Downloads/url_list.txt with a list of all urls.
 
 ## if you get certificate errors run the following command to update them
 /Applications/Python\"python version"/Install\ Certificates.command
+
 User your current python version
+
 for example,if you have python 3.6
+
 `/Applications/Python\3.6/Install\ Certificates.command`
 ## if you get signiture varification failed error
-run
+
+run this command to update youtube-dl
+
 `sudo -H pip3 install --upgrade youtube-dl`
 
 
