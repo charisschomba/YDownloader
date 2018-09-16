@@ -79,10 +79,15 @@ you should have url_list.txt in /home/[user]/Downloads/
 
 for example /home/anonymous/Downloads/url_list.txt with a list of all urls.
 
-if you get certificate errors run the following command to update them
-/Applications/'Python version'/Install Certificates.command
+## if you get certificate errors run the following command to update them
+/Applications/Python\"python version"/Install\ Certificates.command
 User your current python version
-/Applications/Python 3.6/Install Certificates.command
+for example,if you have python 3.6
+`/Applications/Python\3.6/Install\ Certificates.command`
+## if you get signiture varification failed error
+run
+`sudo -H pip3 install --upgrade youtube-dl`
+
 
 
 
