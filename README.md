@@ -40,9 +40,13 @@ source [name of virtualenv]/bin/activate
 
 ## On your terminal run:
 
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 
 to install the libraries required
+
+### Update youtube-dl by running 
+
+pip3 install --upgrade youtube-dl
 
 ## On your terminal run:
 
