@@ -92,7 +92,7 @@ you should have url_list.txt in the /Downloads/ folder with a list of urls,each 
 
 for example /home/anonymous/Downloads/url_list.txt with a list of all urls.
 
-## if you get certificate errors run the following command to update them
+## if you get certificate errors run the following command to update them(Mac users)
 /Applications/Python\"python version"/Install\ Certificates.command
 
 User your current python version
