@@ -50,7 +50,7 @@ def playlist(url):
     playlist = pafy.get_playlist(url)
     path="/Users/{}/Downloads".format(user) +"/Playlist/{}".format(playlist['title'])
     join_=os.path.join(path)
-    file ='/Users{}/Downloads/Playlist'.format(user)
+    file ='/Users/{}/Downloads/Playlist'.format(user)
     if  os.path.isdir(file) == True:
         pass
     else:
@@ -64,7 +64,7 @@ def playlist(url):
     with youtube_dl.YoutubeDL({}) as ydl:
         ydl.download([url])
 
-def from_text_file():
+def from_text_file_mp4():
     os.chdir(ulr_list_dir)
     file = "url_list"
     file = file +'.txt'
@@ -153,7 +153,7 @@ def downloadType():
        saveUrl(url)
        playlist(url)
     elif type == "From Text File Video":
-        from_text_file()
+        from_text_file_mp4()
     elif type == "From Text File Audio":
         from_text_file_mp3()
     else:
