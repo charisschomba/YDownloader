@@ -103,7 +103,7 @@ User your current python version
 
 for example,if you have python 3.6
 
-`/Applications/Python\3.6/Install\ Certificates.command`
+`/Applications/Python\ 3.6/Install\ Certificates.command`
 ## if you get signiture varification failed error
 
 run this command to update youtube-dl
