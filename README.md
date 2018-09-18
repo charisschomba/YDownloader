@@ -29,6 +29,8 @@ cd YDownloader
 
 ## Create a virtual environment in the root directory using python3:
 
+i.e Inside YDownloader folder.
+
 virtualenv -p pytho3 [name of virtualenv]
 
 ## Activate the virtualenv:
