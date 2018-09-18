@@ -40,7 +40,7 @@ def mp4(url):
     path="/Users/{}/Downloads/Video".format(user)
     os.chdir(path)
     songs=pafy.new(url)
-    song=songs.getbest(preftype="any")
+    song=songs.getbestvideo(preftype="mp4")
     print (songs.title)
     file=song.download(quiet=False)
     print('Download Completed ')
