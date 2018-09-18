@@ -25,10 +25,7 @@ Clone this repository:
 
 git clone  https://github.com/charisschomba/YDownloader.git
 
-for linux cd YDownloader,
-or
-for mac users cd YDownloader/Mac 
-
+cd YDownloader
 
 ## Create a virtual environment in the root directory using python3:
 
@@ -37,6 +34,8 @@ virtualenv -p pytho3 [name of virtualenv]
 ## Activate the virtualenv:
 
 source [name of virtualenv]/bin/activate
+
+### For Mac users cd YDownloader/Mac
 
 ## On your terminal run:
 
@@ -50,7 +49,8 @@ pip3 install --upgrade youtube-dl
 
 
 ## Update ssl Certificates
-/Applications/Python\"python version"/Install\ Certificates.command
+
+/Applications/Python\" python version"/Install\ Certificates.command
 
 User your current python version
 
@@ -73,21 +73,27 @@ You can manually enter the url or copy it and the script detect the copied url.
 ## The  script has five options
 ## 1. Audio
 
-Downloads Audio
-First create a Music folder in Downloads
-Downloads/Music
+Downloads Audios
+
+First create a Music folder in Downloads folder
+
+### Downloads/Music
 
 ## 2. Video
 
-Downloads Video
-First create a Video folder in Downloads
-Downloads/Video
+Downloads Videos
+
+First create a Video folder in Downloads folder
+
+### Downloads/Video
 
 ## 3. Playlist
 
 The url must be a playlist url.
-First create a Playlist folder in Downloads
-Downloads/Playlist
+
+First create a Playlist folder in Downloads folder.
+
+### Downloads/Playlist
 
 ## 4. From text file video
 
@@ -99,7 +105,7 @@ This option downloads Audio from a text file
 
 ## For option 4 and 5
 
-The first you choose option 4 or 5 without url_list in the download folder,
+If first you choose option 4 or 5 without url_list in the Downloads folder,
 the script will create one for you.
 
 you should have url_list.txt in the /Downloads/ folder with a list of urls,each url should in a new line.
