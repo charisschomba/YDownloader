@@ -37,7 +37,7 @@ virtualenv -p pytho3 [name of virtualenv]
 
 source [name of virtualenv]/bin/activate
 
-### For Mac users cd YDownloader/Mac
+### For Mac users cd Mac folder
 
 ## On your terminal run:
 
