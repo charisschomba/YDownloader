@@ -48,6 +48,16 @@ to install the libraries required
 
 pip3 install --upgrade youtube-dl
 
+
+## if you get certificate errors run the following command to update them(Mac users)
+/Applications/Python\"python version"/Install\ Certificates.command
+
+User your current python version
+
+for example,if you have python 3.6
+
+`/Applications/Python\ 3.6/Install\ Certificates.command`
+
 ## On your terminal run:
 
 python YDownloader-Linux.py if your using linux
