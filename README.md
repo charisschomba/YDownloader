@@ -49,7 +49,7 @@ to install the libraries required
 pip3 install --upgrade youtube-dl
 
 
-## if you get certificate errors run the following command to update them(Mac users)
+## Update ssl Certificates
 /Applications/Python\"python version"/Install\ Certificates.command
 
 User your current python version
