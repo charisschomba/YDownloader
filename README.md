@@ -14,6 +14,7 @@ The script downloads Audio,Video and the playlist.
 
 - [Python3](https://www.python.org/) (programming languag)
 - [Virtualenv](https://virtualenv.pypa.io/en/stable/)(To isolate script modules)
+- [Homebrew](https://brew.sh/)
 
 ## How to setup it up:
 
@@ -24,6 +25,8 @@ The script downloads Audio,Video and the playlist.
 Clone this repository:
 
 git clone  https://github.com/charisschomba/YDownloader.git
+
+brew install libav (mac users)
 
 cd YDownloader
 
@@ -48,17 +51,6 @@ to install the libraries required
 ### Update youtube-dl by running 
 
 pip3 install --upgrade youtube-dl
-
-
-## Update ssl Certificates
-
-/Applications/Python\" python version"/Install\ Certificates.command
-
-User your current python version
-
-for example,if you have python 3.6
-
-`/Applications/Python\ 3.6/Install\ Certificates.command`
 
 ## On your terminal run:
 
