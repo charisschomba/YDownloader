@@ -1,8 +1,11 @@
+from __future__ import unicode_literals
 import pafy,sys,getpass
 import os,time,subprocess as sub
 import pyautogui as py
 import pyperclip
 import youtube_dl
+
+
 
 user = getpass.getuser()
 
@@ -25,24 +28,23 @@ def playlistInfo(url):
 def mp3(url):
     path="/Users/{}/Downloads/Music".format(user)
     os.chdir(path)
-    songs=pafy.new(url)
-    song=songs.getbestaudio()
-    print (songs.title)
-    file=song.download()
-    file_split=file.split('.webm')
-    renamed = file_split[0] + '.mp3'
-    file_path = "/Users/{}/Downloads/Music/{}".format(user,file)
-    new_file = "/Users/{}/Downloads/Music/{}".format(user,renamed)
-    os.rename(file_path,new_file)
+    ydl_opts = {
+        'format': 'bestaudio/best',
+        'postprocessors': [{
+            'key': 'FFmpegExtractAudio',
+            'preferredcodec': 'mp3',
+            'preferredquality': '192',
+        }],
+    }
+    with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+        ydl.download([url])
     print('Download Completed ')
 
 def mp4(url):
     path="/Users/{}/Downloads/Video".format(user)
     os.chdir(path)
-    songs=pafy.new(url)
-    song=songs.getbest(preftype="mp4")
-    print (songs.title)
-    file=song.download(quiet=False)
+    with youtube_dl.YoutubeDL({}) as ydl:
+        ydl.download([url])
     print('Download Completed ')
 
 def playlist(url):
