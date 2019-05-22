@@ -1,85 +1,73 @@
 # YDownloader
 YDownloader script downloads Youtube contents.
-The script downloads Audio and Video.
+The script downloads Audio, Videos and Playlists.
 
 ## Requirements
 
-- [Python3](https://www.python.org/) (programming languag)
-- [Virtualenv](https://virtualenv.pypa.io/en/stable/)(To isolate script modules)
+- [Python3](https://www.python.org/)
+- [Virtualenv](https://virtualenv.pypa.io/en/stable/)
 - [Homebrew](https://brew.sh/)
+- [chocolately](https://chocolatey.org) - windows users
 
 ## How to setup it up:
 
-1.sudo install python3
+1.Install [Python3](https://www.python.org/)
 
-2.pip install virtualenv
+##### Install virtualenv
 
-Clone this repository:
+2.`pip install virtualenv`
+
+##### Clone this repository:
 
 `git clone  https://github.com/charisschomba/YDownloader.git`
 
-`brew install libav` 
+##### Install audio converter dependencies depending on your operating system
 
-cd YDownloader
+`brew install ffmpeg` for MacOs
 
-## Create a virtual environment in the root directory using python3:
+`sudo apt-get install ffmpeg` or `sudo apt-get install -y libav-tools` for Linux
+
+##### For windows users
+
+Run `CMD` as administrator and paste the code below to install chocolatey
+
+`@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"`
+
+Once the  installation is complete run `choco install ffmpeg` to install `ffmpeg`
+
+`cd YDownloader`
+##### Create a virtual environment in the root directory using python3:
 
 `virtualenv -p python3 yd`
 
-## Activate the virtualenv:
+##### Activate the virtualenv:
 
-`source yd/bin/activate`
+`source yd/bin/activate` - for MacOs and Linux
 
-## On your terminal run:
+`Yd\Scripts\activate` - for windows users
 
-`pip3 install -r requirements.txt`
+##### On your terminal run:
 
-to install the libraries required
+`pip3 install -r requirements.txt` - to install the packages required
+##### Update youtube-dl by running 
 
-### Update youtube-dl by running 
+`pip3 install --upgrade youtube-dl`
 
-pip3 install --upgrade youtube-dl
+##### On your terminal run:
 
-## On your terminal run:
-
-`python download.py`
-
-
-## How to use it.
-You can manually enter the url or copy the url and the script detect the copied url.
-
-eg https://www.youtube.com/watch?v=-5S0NOlIxTk 
-
-click download and select an option
-
-## The  script has three options
-## 1. Audio
-
-Downloads Audio
-
-## 2. Video
-
-Downloads Video
-
-## 3. Playlist
-
-Downloads Playlist
+`python download.py` and type `D` to download or `Q` to quit.
 
 
+### How to use it.
+##### This script downloads only Youtube contents.
+- Copy `audio/video/playlist url` and start the script.
 
+- Eg playlist url - `https://www.youtube.com/watch?v=aJOTlE1K90k&list=PLuUrokoVSxlcgocBXbDF76yWd3YKWpOH9` 
+- Audio /Video url - `https://www.youtube.com/watch?v=dmJefsOErr0`
 
-
-
-
-
-
-
-
-
-
-
-
-
+- Choose type `A` for Audio `V` for Video or `P` for Playlist to download.
+- Note: This script will only download playlist if the url is a playlist url.
+- Choose `Playlist option` if the url is a valid youtube playlist url.
 
 
 

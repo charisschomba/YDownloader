@@ -30,7 +30,7 @@ def download_type():
 
 print(colored('---------------------------------------------------------------------------------------', 'blue'))
 print(colored('YDownloader', 'blue'))
-print(colored("Copy youtube url to the clipboard and start the script to Download ", 'blue'))
+print(colored("Copy youtube url to the clipboard and click D to Download ", 'blue'))
 print(colored('---------------------------------------------------------------------------------------', 'blue'))
 
 url = ""

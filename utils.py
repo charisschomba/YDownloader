@@ -12,9 +12,9 @@ class Helpers:
     @staticmethod
     def check_platform(file=''):
         os_platform = platform.system()
-        if os_platform == 'Darwin':
+        if os_platform == 'Windows' or os_platform == 'Darwin':
             return "/Users/{}/Downloads/{}".format(user, file)
-        elif os_platform == 'Windows' or os_platform == 'Linux':
+        elif os_platform == 'Linux':
             return "/home/{}/Downloads/{}".format(user, file)
 
     @staticmethod
