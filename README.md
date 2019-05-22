@@ -52,14 +52,18 @@ eg https://www.youtube.com/watch?v=-5S0NOlIxTk
 
 click download and select an option
 
-## The  script has two options
+## The  script has three options
 ## 1. Audio
 
-Downloads Audios
+Downloads Audio
 
 ## 2. Video
 
-Downloads Videos
+Downloads Video
+
+## 3. Playlist
+
+Downloads Playlist
 
 
 
