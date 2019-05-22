@@ -50,4 +50,10 @@ class Helpers:
             except:
                 pass
 
+    @staticmethod
+    def playlist_info(url):
+        playlist = pafy.get_playlist(url)
+        print("Title : " + playlist['title'])
+        print("Author: " + playlist['author'])
+        print("Items : " + str(len(playlist['items'])))
 

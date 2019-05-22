@@ -10,7 +10,8 @@ Helper = Helpers()
 
 def download_type():
 
-    music_type = input(colored('Press A for Audio or V for Video: > ', 'green'))
+    music_type = input(colored('Press A for Audio  V for Video P for Playlist : > ', 'green'))
+    print(colored('processing you download request ...........', 'blue'))
 
     if music_type == "A" or music_type == "a":
         Helpers.save_url_(url)
@@ -19,6 +20,10 @@ def download_type():
     elif music_type == 'V' or music_type == 'v':
         Helpers.save_url_(url)
         Audio.mp4(url)
+
+    elif music_type == 'P' or music_type == 'p':
+        Helpers.save_url(url)
+        Audio.playlist(url)
     else:
         main()
 

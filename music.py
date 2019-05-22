@@ -1,11 +1,11 @@
 import youtube_dl
 import os
 import getpass
+import pafy
 from termcolor import colored
-
-user = getpass.getuser()
 from utils import Helpers
 
+user = getpass.getuser()
 utils = Helpers()
 
 
@@ -35,4 +35,22 @@ class Music:
             print(colored('Download Completed', 'green'))
         except:
             print(colored('something went wrong try again', 'red'))
+
+    def playlist(self, url):
+        playlist = pafy.get_playlist(url)
+        path = "/Users/{}/Downloads".format(user) + "/Playlist/{}".format(playlist['title'])
+        join_ = os.path.join(path)
+        file = '/Users/{}/Downloads/Playlist'.format(user)
+        if os.path.isdir(file) == True:
+            pass
+        else:
+            os.mkdir(file)
+        if os.path.isdir(path) == True:
+            pass
+        else:
+            os.mkdir(join_)
+        os.chdir(join_)
+        utils.playlist_info(url)
+        with youtube_dl.YoutubeDL({}) as ydl:
+            ydl.download([url])
 
