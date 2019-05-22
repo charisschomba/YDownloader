@@ -19,7 +19,7 @@ class Music:
         os.chdir(path)
 
     def mp3(self, url):
-        path = "/Users/{}/Downloads/Music".format(user)
+        path = Helpers.check_platform('Music')
         self.create_path(path)
         ydl_opts = utils.ydl_options()
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
@@ -27,7 +27,7 @@ class Music:
         print(colored('Download Completed', 'green'))
 
     def mp4(self, url):
-        path = "/Users/{}/Downloads/Video".format(user)
+        path = Helpers.check_platform('Videos')
         self.create_path(path)
         try:
             with youtube_dl.YoutubeDL({}) as ydl:
@@ -38,9 +38,9 @@ class Music:
 
     def playlist(self, url):
         playlist = pafy.get_playlist(url)
-        path = "/Users/{}/Downloads".format(user) + "/Playlist/{}".format(playlist['title'])
+        path = Helpers.check_platform() + "/Playlists/{}".format(playlist['title'])
         join_ = os.path.join(path)
-        file = '/Users/{}/Downloads/Playlist'.format(user)
+        file = Helpers.check_platform('Playlists')
         if os.path.isdir(file) == True:
             pass
         else:
